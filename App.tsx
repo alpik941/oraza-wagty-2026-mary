@@ -124,7 +124,7 @@ const App: React.FC = () => {
           <div className="w-full flex justify-center items-center relative z-1 mt-0 mb-0 md:mt-2 md:mb-2">
             <div className="w-[85vw] max-w-[320px] sm:max-w-[420px] md:max-w-[650px] z-20">
               <img
-                src="/valvoline_glow.png"
+                src={`${import.meta.env.BASE_URL}valvoline_glow.png`}
                 alt="Valvoline"
                 className="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.6)]"
               />
