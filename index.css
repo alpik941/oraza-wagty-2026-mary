@@ -1,0 +1,336 @@
+/* Global CSS (loaded from index.html) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Background noise overlay used in App.tsx (replaces inline style) */
+:root {
+  --app-noise-bg: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  --app-suhoor-color: #ff4d4d;
+  --app-iftar-color: #ff4d4d;
+}
+
+.app-noise {
+  background-image: var(--app-noise-bg);
+}
+
+.app-text-suhoor {
+  color: var(--app-suhoor-color);
+}
+
+.app-text-iftar {
+  color: var(--app-iftar-color);
+}
+
+/* Arabic dua typography (used in components/DuaCard.tsx) */
+.husrev-style {
+  /* 1. Приоритет шрифтов, наиболее близких к каллиграфии Хюсрева */
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+
+  /* 2. Размер и межстрочный интервал */
+  font-size: 1.5rem; /* Увеличено для лучшей читаемости вязи */
+  line-height: 2.2; /* Стиль Hüsrev требует много места для огласовок */
+
+  /* 3. Вес шрифта */
+  font-weight: 500; /* 700 слишком тяжел для этого стиля, 500 — идеальный баланс */
+
+  /* 4. Тонкие настройки арабской типографики */
+  font-feature-settings:
+    'cv05' on,
+    'cv08' on,
+    'kern' on;
+  word-spacing: 0.15em;
+  text-rendering: optimizeLegibility;
+
+  /* 5. Плавное сглаживание */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Stars (animated, no inline styles) */
+.app-star {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 1);
+  animation: appStarPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes appStarPulse {
+  0%,
+  100% {
+    opacity: 0.18;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+/* sizes */
+.app-star.s1 {
+  width: 1px;
+  height: 1px;
+}
+.app-star.s2 {
+  width: 2px;
+  height: 2px;
+}
+
+/* opacity presets (base opacity; pulse still applies) */
+.app-star.o1 {
+  opacity: 0.12;
+}
+.app-star.o2 {
+  opacity: 0.22;
+}
+
+/* delays */
+.app-star.d0 {
+  animation-delay: 0s;
+}
+.app-star.d1 {
+  animation-delay: 0.6s;
+}
+.app-star.d2 {
+  animation-delay: 1.2s;
+}
+.app-star.d3 {
+  animation-delay: 1.8s;
+}
+.app-star.d4 {
+  animation-delay: 2.4s;
+}
+.app-star.d5 {
+  animation-delay: 3s;
+}
+
+/* top (%). keep only the ones we use in App.tsx */
+.app-star.t6 {
+  top: 6%;
+}
+.app-star.t8 {
+  top: 8%;
+}
+.app-star.t10 {
+  top: 10%;
+}
+.app-star.t12 {
+  top: 12%;
+}
+.app-star.t14 {
+  top: 14%;
+}
+.app-star.t16 {
+  top: 16%;
+}
+.app-star.t18 {
+  top: 18%;
+}
+.app-star.t20 {
+  top: 20%;
+}
+.app-star.t22 {
+  top: 22%;
+}
+.app-star.t24 {
+  top: 24%;
+}
+.app-star.t26 {
+  top: 26%;
+}
+.app-star.t28 {
+  top: 28%;
+}
+.app-star.t30 {
+  top: 30%;
+}
+.app-star.t34 {
+  top: 34%;
+}
+.app-star.t36 {
+  top: 36%;
+}
+.app-star.t38 {
+  top: 38%;
+}
+.app-star.t40 {
+  top: 40%;
+}
+.app-star.t42 {
+  top: 42%;
+}
+.app-star.t44 {
+  top: 44%;
+}
+.app-star.t46 {
+  top: 46%;
+}
+.app-star.t48 {
+  top: 48%;
+}
+.app-star.t50 {
+  top: 50%;
+}
+.app-star.t52 {
+  top: 52%;
+}
+.app-star.t58 {
+  top: 58%;
+}
+.app-star.t60 {
+  top: 60%;
+}
+.app-star.t62 {
+  top: 62%;
+}
+.app-star.t66 {
+  top: 66%;
+}
+.app-star.t68 {
+  top: 68%;
+}
+.app-star.t70 {
+  top: 70%;
+}
+.app-star.t72 {
+  top: 72%;
+}
+.app-star.t76 {
+  top: 76%;
+}
+.app-star.t78 {
+  top: 78%;
+}
+.app-star.t82 {
+  top: 82%;
+}
+.app-star.t84 {
+  top: 84%;
+}
+.app-star.t86 {
+  top: 86%;
+}
+.app-star.t88 {
+  top: 88%;
+}
+.app-star.t90 {
+  top: 90%;
+}
+.app-star.t92 {
+  top: 92%;
+}
+.app-star.t94 {
+  top: 94%;
+}
+.app-star.t96 {
+  top: 96%;
+}
+
+/* left (%). keep only the ones we use in App.tsx */
+.app-star.l5 {
+  left: 5%;
+}
+.app-star.l6 {
+  left: 6%;
+}
+.app-star.l8 {
+  left: 8%;
+}
+.app-star.l10 {
+  left: 10%;
+}
+.app-star.l12 {
+  left: 12%;
+}
+.app-star.l14 {
+  left: 14%;
+}
+.app-star.l19 {
+  left: 19%;
+}
+.app-star.l22 {
+  left: 22%;
+}
+.app-star.l24 {
+  left: 24%;
+}
+.app-star.l26 {
+  left: 26%;
+}
+.app-star.l29 {
+  left: 29%;
+}
+.app-star.l34 {
+  left: 34%;
+}
+.app-star.l37 {
+  left: 37%;
+}
+.app-star.l41 {
+  left: 41%;
+}
+.app-star.l42 {
+  left: 42%;
+}
+.app-star.l44 {
+  left: 44%;
+}
+.app-star.l47 {
+  left: 47%;
+}
+.app-star.l53 {
+  left: 53%;
+}
+.app-star.l55 {
+  left: 55%;
+}
+.app-star.l58 {
+  left: 58%;
+}
+.app-star.l62 {
+  left: 62%;
+}
+.app-star.l63 {
+  left: 63%;
+}
+.app-star.l64 {
+  left: 64%;
+}
+.app-star.l67 {
+  left: 67%;
+}
+.app-star.l71 {
+  left: 71%;
+}
+.app-star.l73 {
+  left: 73%;
+}
+.app-star.l77 {
+  left: 77%;
+}
+.app-star.l78 {
+  left: 78%;
+}
+.app-star.l80 {
+  left: 80%;
+}
+.app-star.l82 {
+  left: 82%;
+}
+.app-star.l86 {
+  left: 86%;
+}
+.app-star.l88 {
+  left: 88%;
+}
+.app-star.l92 {
+  left: 92%;
+}
+.app-star.l93 {
+  left: 93%;
+}
+.app-star.l95 {
+  left: 95%;
+}
+.app-star.l96 {
+  left: 96%;
+}
