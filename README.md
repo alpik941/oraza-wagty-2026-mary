@@ -4,7 +4,7 @@
 
 # Oraza Wagty 2026 — Mary
 
-![CI](../../actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/alpik941/oraza-wagty-2026-mary/actions/workflows/ci.yml/badge.svg)
 
 Interactive Ramadan calendar for 2026 (Mary, Turkmenistan): prayer times, countdown timers, and duas.
 
