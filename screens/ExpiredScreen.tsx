@@ -12,7 +12,7 @@ const ExpiredScreen: React.FC = () => {
       <div className="p-8 rounded-3xl bg-red-500/20 border-2 border-red-500/50 backdrop-blur-lg max-w-md">
         <h2 className="text-2xl font-bold text-red-400 mb-2 uppercase">Oraza Baýramy</h2>
         <p className="text-[#A8C5E8] mb-4">
-          Allah etjek doga-dilegleriňizi, tutjak orazalaryňyzy kabul etsin!
+          Allah eden doga-dilegleriňizi, tutan orazalaryňyzy kabul etsin!
         </p>
         <div className="py-3 px-6 bg-red-500 rounded-full text-white font-bold text-lg shadow-lg">
           Baýram Namazy — 07:50
